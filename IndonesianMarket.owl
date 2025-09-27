@@ -1,0 +1,305 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/hp/ontologies/2025/8/IndonesianMarket.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/hp/ontologies/2025/8/IndonesianMarket.owl">
+    <Prefix name="" IRI="http://www.semanticweb.org/hp/ontologies/2025/8/IndonesianMarket.owl"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Car"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mitsubishi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#4WD"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FWD"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Diesel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SUV"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GasEngine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AMT"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Automatic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LCGC"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Transmission"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LSUV"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sedan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PlugInHybrid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Manual5Speed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DieselEngine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FuelType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RWD"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EngineType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LowMPV"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hybrid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElectricEngine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DCT"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Toyota"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Manual"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vehicle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AT6Speed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Specs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DriveTrain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AWD"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Suzuki"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Electric"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wuling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AT4Speed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Daihatsu"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Manual6Speed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CVT"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Brand"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hatchback"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Honda"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hyundai"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LargeMPV"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#AMT"/>
+        <Class IRI="#Automatic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AT4Speed"/>
+        <Class IRI="#Automatic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AT6Speed"/>
+        <Class IRI="#Automatic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AWD"/>
+        <Class IRI="#DriveTrain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Automatic"/>
+        <Class IRI="#Transmission"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CVT"/>
+        <Class IRI="#Automatic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Car"/>
+        <Class IRI="#Vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DCT"/>
+        <Class IRI="#Automatic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Daihatsu"/>
+        <Class IRI="#Brand"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Diesel"/>
+        <Class IRI="#FuelType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DieselEngine"/>
+        <Class IRI="#EngineType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DriveTrain"/>
+        <Class IRI="#Specs"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Electric"/>
+        <Class IRI="#FuelType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElectricEngine"/>
+        <Class IRI="#EngineType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EngineType"/>
+        <Class IRI="#Specs"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FWD"/>
+        <Class IRI="#DriveTrain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gas"/>
+        <Class IRI="#FuelType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GasEngine"/>
+        <Class IRI="#EngineType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hatchback"/>
+        <Class IRI="#Car"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Honda"/>
+        <Class IRI="#Brand"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hybrid"/>
+        <Class IRI="#FuelType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hyundai"/>
+        <Class IRI="#Brand"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LCGC"/>
+        <Class IRI="#Car"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LSUV"/>
+        <Class IRI="#Car"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LargeMPV"/>
+        <Class IRI="#Car"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LowMPV"/>
+        <Class IRI="#Car"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Manual"/>
+        <Class IRI="#Transmission"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Manual5Speed"/>
+        <Class IRI="#Manual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Manual6Speed"/>
+        <Class IRI="#Manual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mitsubishi"/>
+        <Class IRI="#Brand"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PlugInHybrid"/>
+        <Class IRI="#FuelType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RWD"/>
+        <Class IRI="#DriveTrain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SUV"/>
+        <Class IRI="#Car"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sedan"/>
+        <Class IRI="#Car"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Suzuki"/>
+        <Class IRI="#Brand"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Toyota"/>
+        <Class IRI="#Brand"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Transmission"/>
+        <Class IRI="#Specs"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wuling"/>
+        <Class IRI="#Brand"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#4WD"/>
+        <Class IRI="#DriveTrain"/>
+    </SubClassOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
