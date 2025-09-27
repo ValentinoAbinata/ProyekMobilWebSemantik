@@ -13,293 +13,480 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
-        <Class IRI="#Car"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Mitsubishi"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#4WD"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#FWD"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Diesel"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#SUV"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#GasEngine"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#AMT"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Automatic"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#LCGC"/>
+        <Class IRI="#BodyStyle"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Transmission"/>
+        <Class IRI="#Brand"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#LSUV"/>
+        <Class IRI="#Car"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Sedan"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PlugInHybrid"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Manual5Speed"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#DieselEngine"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#FuelType"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#RWD"/>
+        <Class IRI="#DriveTrain"/>
     </Declaration>
     <Declaration>
         <Class IRI="#EngineType"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#LowMPV"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Hybrid"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ElectricEngine"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#DCT"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Toyota"/>
+        <Class IRI="#FuelType"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Manual"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Model"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ModelYear"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Transmission"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Vehicle"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#AT6Speed"/>
+        <Class IRI="#PriceRange?"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Specs"/>
+        <ObjectProperty IRI="#hasBodyStyle"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#DriveTrain"/>
+        <ObjectProperty IRI="#hasBrand"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#AWD"/>
+        <ObjectProperty IRI="#hasDriveTrain"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Suzuki"/>
+        <ObjectProperty IRI="#hasEngineType"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Electric"/>
+        <ObjectProperty IRI="#hasFuelType"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Wuling"/>
+        <ObjectProperty IRI="#hasModel"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#AT4Speed"/>
+        <ObjectProperty IRI="#hasModelYear"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Daihatsu"/>
+        <ObjectProperty IRI="#hasTransmission"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Manual6Speed"/>
+        <NamedIndividual IRI="#AMT"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#CVT"/>
+        <NamedIndividual IRI="#AT4Speed"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Brand"/>
+        <NamedIndividual IRI="#AT6Speed"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Gas"/>
+        <NamedIndividual IRI="#AWD"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Hatchback"/>
+        <NamedIndividual IRI="#Avanza"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Honda"/>
+        <NamedIndividual IRI="#CR-V"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Hyundai"/>
+        <NamedIndividual IRI="#CVT"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#LargeMPV"/>
+        <NamedIndividual IRI="#Civic"/>
     </Declaration>
-    <SubClassOf>
-        <Class IRI="#AMT"/>
-        <Class IRI="#Automatic"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#AT4Speed"/>
-        <Class IRI="#Automatic"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#AT6Speed"/>
-        <Class IRI="#Automatic"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#AWD"/>
-        <Class IRI="#DriveTrain"/>
-    </SubClassOf>
+    <Declaration>
+        <NamedIndividual IRI="#DCT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Daihatsu"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Diesel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DieselEngine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Electric"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ElectricEngine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FWD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GasEngine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hatchback"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Honda"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hybird"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hyundai"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LCGC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LSUV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LargeMPV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LowMPV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Manual5Speed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Manual6Speed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mitsubishi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PluginHybird"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RWD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SUV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sedan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Stargazer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Suzuki"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Toyota"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Wuling"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Xenia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2020"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2021"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2022"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2023"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2024"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2025"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#4WD"/>
+    </Declaration>
     <SubClassOf>
         <Class IRI="#Automatic"/>
         <Class IRI="#Transmission"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#CVT"/>
-        <Class IRI="#Automatic"/>
+        <Class IRI="#BodyStyle"/>
+        <Class IRI="#Car"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Car"/>
         <Class IRI="#Vehicle"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#DCT"/>
+        <Class IRI="#Manual"/>
+        <Class IRI="#Transmission"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Model"/>
+        <Class IRI="#Car"/>
+    </SubClassOf>
+    <DisjointClasses>
         <Class IRI="#Automatic"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Daihatsu"/>
-        <Class IRI="#Brand"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Diesel"/>
-        <Class IRI="#FuelType"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#DieselEngine"/>
-        <Class IRI="#EngineType"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#DriveTrain"/>
-        <Class IRI="#Specs"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Electric"/>
-        <Class IRI="#FuelType"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ElectricEngine"/>
-        <Class IRI="#EngineType"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#EngineType"/>
-        <Class IRI="#Specs"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#FWD"/>
-        <Class IRI="#DriveTrain"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Gas"/>
-        <Class IRI="#FuelType"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#GasEngine"/>
-        <Class IRI="#EngineType"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Hatchback"/>
-        <Class IRI="#Car"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Honda"/>
-        <Class IRI="#Brand"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Hybrid"/>
-        <Class IRI="#FuelType"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Hyundai"/>
-        <Class IRI="#Brand"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#LCGC"/>
-        <Class IRI="#Car"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#LSUV"/>
-        <Class IRI="#Car"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#LargeMPV"/>
-        <Class IRI="#Car"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#LowMPV"/>
-        <Class IRI="#Car"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Manual"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Automatic"/>
+        <NamedIndividual IRI="#AMT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Automatic"/>
+        <NamedIndividual IRI="#AT4Speed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Automatic"/>
+        <NamedIndividual IRI="#AT6Speed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DriveTrain"/>
+        <NamedIndividual IRI="#AWD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Model"/>
+        <NamedIndividual IRI="#Avanza"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Model"/>
+        <NamedIndividual IRI="#CR-V"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Automatic"/>
+        <NamedIndividual IRI="#CVT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Model"/>
+        <NamedIndividual IRI="#Civic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Automatic"/>
+        <NamedIndividual IRI="#DCT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Brand"/>
+        <NamedIndividual IRI="#Daihatsu"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FuelType"/>
+        <NamedIndividual IRI="#Diesel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EngineType"/>
+        <NamedIndividual IRI="#DieselEngine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FuelType"/>
+        <NamedIndividual IRI="#Electric"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EngineType"/>
+        <NamedIndividual IRI="#ElectricEngine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DriveTrain"/>
+        <NamedIndividual IRI="#FWD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FuelType"/>
+        <NamedIndividual IRI="#Gas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EngineType"/>
+        <NamedIndividual IRI="#GasEngine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BodyStyle"/>
+        <NamedIndividual IRI="#Hatchback"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Brand"/>
+        <NamedIndividual IRI="#Honda"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FuelType"/>
+        <NamedIndividual IRI="#Hybird"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Brand"/>
+        <NamedIndividual IRI="#Hyundai"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BodyStyle"/>
+        <NamedIndividual IRI="#LCGC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BodyStyle"/>
+        <NamedIndividual IRI="#LSUV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BodyStyle"/>
+        <NamedIndividual IRI="#LargeMPV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BodyStyle"/>
+        <NamedIndividual IRI="#LowMPV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Manual"/>
+        <NamedIndividual IRI="#Manual5Speed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Manual"/>
+        <NamedIndividual IRI="#Manual6Speed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Brand"/>
+        <NamedIndividual IRI="#Mitsubishi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FuelType"/>
+        <NamedIndividual IRI="#PluginHybird"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DriveTrain"/>
+        <NamedIndividual IRI="#RWD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BodyStyle"/>
+        <NamedIndividual IRI="#SUV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BodyStyle"/>
+        <NamedIndividual IRI="#Sedan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Model"/>
+        <NamedIndividual IRI="#Stargazer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Brand"/>
+        <NamedIndividual IRI="#Suzuki"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Brand"/>
+        <NamedIndividual IRI="#Toyota"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Brand"/>
+        <NamedIndividual IRI="#Wuling"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Model"/>
+        <NamedIndividual IRI="#Xenia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ModelYear"/>
+        <NamedIndividual IRI="#2020"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ModelYear"/>
+        <NamedIndividual IRI="#2021"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ModelYear"/>
+        <NamedIndividual IRI="#2022"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ModelYear"/>
+        <NamedIndividual IRI="#2023"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ModelYear"/>
+        <NamedIndividual IRI="#2024"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ModelYear"/>
+        <NamedIndividual IRI="#2025"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DriveTrain"/>
+        <NamedIndividual IRI="#4WD"/>
+    </ClassAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBodyStyle"/>
+        <Class IRI="#Car"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBrand"/>
+        <Class IRI="#Car"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBrand"/>
+        <Class IRI="#Model"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDriveTrain"/>
+        <Class IRI="#Car"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasEngineType"/>
+        <Class IRI="#Car"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFuelType"/>
+        <Class IRI="#Car"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasModel"/>
+        <Class IRI="#Brand"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasModel"/>
+        <Class IRI="#Car"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasModelYear"/>
+        <Class IRI="#Car"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTransmission"/>
+        <Class IRI="#Car"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBodyStyle"/>
+        <Class IRI="#BodyStyle"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBrand"/>
+        <Class IRI="#Brand"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDriveTrain"/>
+        <Class IRI="#DriveTrain"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasEngineType"/>
+        <Class IRI="#EngineType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFuelType"/>
+        <Class IRI="#FuelType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasModel"/>
+        <Class IRI="#Model"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasModelYear"/>
+        <Class IRI="#ModelYear"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTransmission"/>
         <Class IRI="#Transmission"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Manual5Speed"/>
-        <Class IRI="#Manual"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Manual6Speed"/>
-        <Class IRI="#Manual"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Mitsubishi"/>
-        <Class IRI="#Brand"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#PlugInHybrid"/>
-        <Class IRI="#FuelType"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#RWD"/>
-        <Class IRI="#DriveTrain"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#SUV"/>
-        <Class IRI="#Car"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Sedan"/>
-        <Class IRI="#Car"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Suzuki"/>
-        <Class IRI="#Brand"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Toyota"/>
-        <Class IRI="#Brand"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Transmission"/>
-        <Class IRI="#Specs"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Wuling"/>
-        <Class IRI="#Brand"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#4WD"/>
-        <Class IRI="#DriveTrain"/>
-    </SubClassOf>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PriceRange?</IRI>
+        <Literal>Ragu</Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 
 
-<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
 
