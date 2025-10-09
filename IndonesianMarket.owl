@@ -12,6 +12,16 @@
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>Kelompok Ontology Mobil : 
+- Valentino Abinata / 123230013
+- Salman Faris / 123230024
+- Muhammad Syahrial Abidin / 123230027
+- Reza Rasendriya Adi Putra / 123230030
+- Adhitya Izam Fauztamam / 123230193
+===============================</Literal>
+    </Annotation>
     <Declaration>
         <Class IRI="#Automatic"/>
     </Declaration>
@@ -76,6 +86,12 @@
         <ObjectProperty IRI="#hasTransmission"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#Model"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ModelYear"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#AMT"/>
     </Declaration>
     <Declaration>
@@ -88,16 +104,7 @@
         <NamedIndividual IRI="#AWD"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Avanza"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#CR-V"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#CVT"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Civic"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#DCT"/>
@@ -172,9 +179,6 @@
         <NamedIndividual IRI="#Sedan"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Stargazer"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#Suzuki"/>
     </Declaration>
     <Declaration>
@@ -182,27 +186,6 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Wuling"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Xenia"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#2020"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#2021"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#2022"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#2023"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#2024"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#2025"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#4WD"/>
@@ -248,20 +231,8 @@
         <NamedIndividual IRI="#AWD"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Model"/>
-        <NamedIndividual IRI="#Avanza"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Model"/>
-        <NamedIndividual IRI="#CR-V"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Automatic"/>
         <NamedIndividual IRI="#CVT"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Model"/>
-        <NamedIndividual IRI="#Civic"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Automatic"/>
@@ -360,10 +331,6 @@
         <NamedIndividual IRI="#Sedan"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Model"/>
-        <NamedIndividual IRI="#Stargazer"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Brand"/>
         <NamedIndividual IRI="#Suzuki"/>
     </ClassAssertion>
@@ -374,34 +341,6 @@
     <ClassAssertion>
         <Class IRI="#Brand"/>
         <NamedIndividual IRI="#Wuling"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Model"/>
-        <NamedIndividual IRI="#Xenia"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#ModelYear"/>
-        <NamedIndividual IRI="#2020"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#ModelYear"/>
-        <NamedIndividual IRI="#2021"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#ModelYear"/>
-        <NamedIndividual IRI="#2022"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#ModelYear"/>
-        <NamedIndividual IRI="#2023"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#ModelYear"/>
-        <NamedIndividual IRI="#2024"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#ModelYear"/>
-        <NamedIndividual IRI="#2025"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#DriveTrain"/>
