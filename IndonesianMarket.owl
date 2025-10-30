@@ -12,30 +12,29 @@
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <Literal>Kelompok Ontology Mobil : 
-- Valentino Abinata / 123230013
-- Salman Faris / 123230024
-- Muhammad Syahrial Abidin / 123230027
-- Reza Rasendriya Adi Putra / 123230030
-- Adhitya Izam Fauztamam / 123230193
-===============================</Literal>
-    </Annotation>
     <Declaration>
         <Class IRI="#Automatic"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#BodyStyle"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Brand"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Car"/>
+        <Class IRI="#Daihatsu"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Diesel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DieselEngine"/>
     </Declaration>
     <Declaration>
         <Class IRI="#DriveTrain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Electric"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElectricEngine"/>
     </Declaration>
     <Declaration>
         <Class IRI="#EngineType"/>
@@ -44,46 +43,109 @@
         <Class IRI="#FuelType"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Gas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GasEngine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Honda"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hybrid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HybridEngine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hyundai"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Manual"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Model"/>
+        <Class IRI="#Mitsubishi"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ModelYear"/>
+        <Class IRI="#Specs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Suzuki"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Toyota"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Transmission"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Vehicle"/>
+        <Class IRI="#VehiclePurpose"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#PriceRange?"/>
+        <Class IRI="#VehicleType"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasBodyStyle"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasBrand"/>
+        <Class IRI="#Wuling"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasDriveTrain"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasEngineType"/>
+        <ObjectProperty IRI="#hasEngineTypeDieselEngine"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasFuelType"/>
+        <ObjectProperty IRI="#hasEngineTypeElectricEngine"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEngineTypeGasEngine"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEngineTypeHybridEngine"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFuelTypeDiesel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFuelTypeElectric"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFuelTypeGas"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFuelTypeHybrid"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasModel"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasModelYear"/>
+        <ObjectProperty IRI="#hasTransmissionAutomatic"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasTransmission"/>
+        <ObjectProperty IRI="#hasTransmissionManual"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasVehiclePurpose"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasVehicleType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#EngingeCapacity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#FuelConsumption"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ModelYear"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Price"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SeatCapacity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AC"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#AMT"/>
@@ -95,70 +157,199 @@
         <NamedIndividual IRI="#AT6Speed"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#AT8Speed"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#AWD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Agya"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AgyaGRS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Almaz"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alphard"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alvez"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Avanza"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#CR-V"/>
+        <NamedIndividual IRI="#Ayla"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BLDC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BRV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Baleno"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Brio"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BrioRS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CCS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CHAdeMO"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CN48"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CN51"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CN53"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CRDI"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CRV"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#CVT"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Calya"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Camry"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#City"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CityCar"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Civic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CompactSUV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Confero"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CorollaAltis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cortez"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Creta"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#DCT"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Daihatsu"/>
+        <NamedIndividual IRI="#DI"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Diesel"/>
+        <NamedIndividual IRI="#Destinator"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#DieselEngine"/>
+        <NamedIndividual IRI="#ElectricInduction"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Electric"/>
+        <NamedIndividual IRI="#Engine"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#ElectricEngine"/>
+        <NamedIndividual IRI="#Ertiga"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Espresso"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#FWD"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Gas"/>
+        <NamedIndividual IRI="#FamilyCar"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#GasEngine"/>
+        <NamedIndividual IRI="#Flex-fuel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fortuner"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fronx"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Full-hybrid"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GDI"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GrandVitara"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HRV"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Hatchback"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Honda"/>
+        <NamedIndividual IRI="#HubMotor"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Hybird"/>
+        <NamedIndividual IRI="#IDI"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Hyundai"/>
+        <NamedIndividual IRI="#InnovaReborn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#InnovaZenix"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ioniq5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jazz"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jimny"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Karimun"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KonaElectric"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#LCGC"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#LSUV"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#LargeMPV"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#LargeSUV"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#LowMPV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LowSUV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LuxuryCar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MPI"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Manual5Speed"/>
@@ -167,80 +358,240 @@
         <NamedIndividual IRI="#Manual6Speed"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Mitsubishi"/>
+        <NamedIndividual IRI="#MediumSUV"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#PluginHybird"/>
+        <NamedIndividual IRI="#Micro-hybrid"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mild-hybrid"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mobilio"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NACS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OffRoadCar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PMSM"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PajeroSport"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Palisade"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PerformanceCar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PowerSplit"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PumpLineNozzle_UnitInjector"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RON89"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RON90"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RON92"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RON95"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RON98"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#RWD"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#SUV"/>
+        <NamedIndividual IRI="#Raize"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rocky"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rush"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SantaFE"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Sedan"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Sigra"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sirion"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SmallSUV"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Stargazer"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Suzuki"/>
+        <NamedIndividual IRI="#StargazerX"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Toyota"/>
+        <NamedIndividual IRI="#Staria"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Wuling"/>
+        <NamedIndividual IRI="#Terios"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TurboCharged"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TurbochargedDiesel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Type1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Type2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UtilityCar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Vellfire"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Veloz"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Vios"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WRV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#XL7"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Xenia"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#2020"/>
+        <NamedIndividual IRI="#Xforce"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#2021"/>
+        <NamedIndividual IRI="#Xpander"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#2022"/>
+        <NamedIndividual IRI="#XpanderCross"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#2023"/>
+        <NamedIndividual IRI="#Yaris"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#2024"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#2025"/>
+        <NamedIndividual IRI="#YarisCross"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#4WD"/>
     </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GB/T"/>
+    </Declaration>
     <SubClassOf>
         <Class IRI="#Automatic"/>
         <Class IRI="#Transmission"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#BodyStyle"/>
-        <Class IRI="#Car"/>
+        <Class IRI="#Daihatsu"/>
+        <Class IRI="#Brand"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Car"/>
-        <Class IRI="#Vehicle"/>
+        <Class IRI="#Diesel"/>
+        <Class IRI="#FuelType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DieselEngine"/>
+        <Class IRI="#EngineType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DriveTrain"/>
+        <Class IRI="#Specs"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Electric"/>
+        <Class IRI="#FuelType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElectricEngine"/>
+        <Class IRI="#EngineType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EngineType"/>
+        <Class IRI="#Specs"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gas"/>
+        <Class IRI="#FuelType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GasEngine"/>
+        <Class IRI="#EngineType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Honda"/>
+        <Class IRI="#Brand"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hybrid"/>
+        <Class IRI="#Electric"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hybrid"/>
+        <Class IRI="#Gas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HybridEngine"/>
+        <Class IRI="#EngineType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hyundai"/>
+        <Class IRI="#Brand"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Manual"/>
         <Class IRI="#Transmission"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Model"/>
-        <Class IRI="#Car"/>
+        <Class IRI="#Mitsubishi"/>
+        <Class IRI="#Brand"/>
     </SubClassOf>
-    <DisjointClasses>
-        <Class IRI="#Automatic"/>
-        <Class IRI="#Manual"/>
-    </DisjointClasses>
+    <SubClassOf>
+        <Class IRI="#Suzuki"/>
+        <Class IRI="#Brand"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Toyota"/>
+        <Class IRI="#Brand"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Transmission"/>
+        <Class IRI="#Specs"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wuling"/>
+        <Class IRI="#Brand"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Hybrid"/>
+        <NamedIndividual IRI="#AC"/>
+    </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Automatic"/>
         <NamedIndividual IRI="#AMT"/>
@@ -254,92 +605,264 @@
         <NamedIndividual IRI="#AT6Speed"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Automatic"/>
+        <NamedIndividual IRI="#AT8Speed"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#DriveTrain"/>
         <NamedIndividual IRI="#AWD"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Model"/>
+        <Class IRI="#Toyota"/>
+        <NamedIndividual IRI="#Agya"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Toyota"/>
+        <NamedIndividual IRI="#AgyaGRS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Wuling"/>
+        <NamedIndividual IRI="#Almaz"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Toyota"/>
+        <NamedIndividual IRI="#Alphard"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Wuling"/>
+        <NamedIndividual IRI="#Alvez"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Toyota"/>
         <NamedIndividual IRI="#Avanza"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Model"/>
-        <NamedIndividual IRI="#CR-V"/>
+        <Class IRI="#Daihatsu"/>
+        <NamedIndividual IRI="#Ayla"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ElectricEngine"/>
+        <NamedIndividual IRI="#BLDC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Honda"/>
+        <NamedIndividual IRI="#BRV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Suzuki"/>
+        <NamedIndividual IRI="#Baleno"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Honda"/>
+        <NamedIndividual IRI="#Brio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Honda"/>
+        <NamedIndividual IRI="#BrioRS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Electric"/>
+        <NamedIndividual IRI="#CCS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Electric"/>
+        <NamedIndividual IRI="#CHAdeMO"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Diesel"/>
+        <NamedIndividual IRI="#CN48"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Diesel"/>
+        <NamedIndividual IRI="#CN51"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Diesel"/>
+        <NamedIndividual IRI="#CN53"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DieselEngine"/>
+        <NamedIndividual IRI="#CRDI"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Honda"/>
+        <NamedIndividual IRI="#CRV"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Automatic"/>
         <NamedIndividual IRI="#CVT"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Model"/>
+        <Class IRI="#Toyota"/>
+        <NamedIndividual IRI="#Calya"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Toyota"/>
+        <NamedIndividual IRI="#Camry"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Honda"/>
+        <NamedIndividual IRI="#City"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VehiclePurpose"/>
+        <NamedIndividual IRI="#CityCar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Honda"/>
         <NamedIndividual IRI="#Civic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VehicleType"/>
+        <NamedIndividual IRI="#CompactSUV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Wuling"/>
+        <NamedIndividual IRI="#Confero"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Toyota"/>
+        <NamedIndividual IRI="#CorollaAltis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Wuling"/>
+        <NamedIndividual IRI="#Cortez"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hyundai"/>
+        <NamedIndividual IRI="#Creta"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Automatic"/>
         <NamedIndividual IRI="#DCT"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Brand"/>
-        <NamedIndividual IRI="#Daihatsu"/>
+        <Class IRI="#DieselEngine"/>
+        <NamedIndividual IRI="#DI"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#FuelType"/>
-        <NamedIndividual IRI="#Diesel"/>
+        <Class IRI="#Mitsubishi"/>
+        <NamedIndividual IRI="#Destinator"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#EngineType"/>
-        <NamedIndividual IRI="#DieselEngine"/>
+        <Class IRI="#ElectricEngine"/>
+        <NamedIndividual IRI="#ElectricInduction"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#FuelType"/>
-        <NamedIndividual IRI="#Electric"/>
+        <Class IRI="#Hybrid"/>
+        <NamedIndividual IRI="#Engine"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#EngineType"/>
-        <NamedIndividual IRI="#ElectricEngine"/>
+        <Class IRI="#Suzuki"/>
+        <NamedIndividual IRI="#Ertiga"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Suzuki"/>
+        <NamedIndividual IRI="#Espresso"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#DriveTrain"/>
         <NamedIndividual IRI="#FWD"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#FuelType"/>
-        <NamedIndividual IRI="#Gas"/>
+        <Class IRI="#VehiclePurpose"/>
+        <NamedIndividual IRI="#FamilyCar"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#EngineType"/>
-        <NamedIndividual IRI="#GasEngine"/>
+        <Class IRI="#GasEngine"/>
+        <NamedIndividual IRI="#Flex-fuel"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#BodyStyle"/>
+        <Class IRI="#Toyota"/>
+        <NamedIndividual IRI="#Fortuner"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Suzuki"/>
+        <NamedIndividual IRI="#Fronx"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HybridEngine"/>
+        <NamedIndividual IRI="#Full-hybrid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GasEngine"/>
+        <NamedIndividual IRI="#GDI"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Suzuki"/>
+        <NamedIndividual IRI="#GrandVitara"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Honda"/>
+        <NamedIndividual IRI="#HRV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VehicleType"/>
         <NamedIndividual IRI="#Hatchback"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Brand"/>
-        <NamedIndividual IRI="#Honda"/>
+        <Class IRI="#ElectricEngine"/>
+        <NamedIndividual IRI="#HubMotor"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#FuelType"/>
-        <NamedIndividual IRI="#Hybird"/>
+        <Class IRI="#DieselEngine"/>
+        <NamedIndividual IRI="#IDI"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Brand"/>
-        <NamedIndividual IRI="#Hyundai"/>
+        <Class IRI="#Toyota"/>
+        <NamedIndividual IRI="#InnovaReborn"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#BodyStyle"/>
+        <Class IRI="#Toyota"/>
+        <NamedIndividual IRI="#InnovaZenix"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hyundai"/>
+        <NamedIndividual IRI="#Ioniq5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Honda"/>
+        <NamedIndividual IRI="#Jazz"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Suzuki"/>
+        <NamedIndividual IRI="#Jimny"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Suzuki"/>
+        <NamedIndividual IRI="#Karimun"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hyundai"/>
+        <NamedIndividual IRI="#KonaElectric"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VehicleType"/>
         <NamedIndividual IRI="#LCGC"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#BodyStyle"/>
-        <NamedIndividual IRI="#LSUV"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#BodyStyle"/>
+        <Class IRI="#VehicleType"/>
         <NamedIndividual IRI="#LargeMPV"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#BodyStyle"/>
+        <Class IRI="#VehicleType"/>
+        <NamedIndividual IRI="#LargeSUV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VehicleType"/>
         <NamedIndividual IRI="#LowMPV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VehicleType"/>
+        <NamedIndividual IRI="#LowSUV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VehiclePurpose"/>
+        <NamedIndividual IRI="#LuxuryCar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GasEngine"/>
+        <NamedIndividual IRI="#MPI"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Manual"/>
@@ -350,149 +873,417 @@
         <NamedIndividual IRI="#Manual6Speed"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Brand"/>
-        <NamedIndividual IRI="#Mitsubishi"/>
+        <Class IRI="#VehicleType"/>
+        <NamedIndividual IRI="#MediumSUV"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#FuelType"/>
-        <NamedIndividual IRI="#PluginHybird"/>
+        <Class IRI="#HybridEngine"/>
+        <NamedIndividual IRI="#Micro-hybrid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HybridEngine"/>
+        <NamedIndividual IRI="#Mild-hybrid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Honda"/>
+        <NamedIndividual IRI="#Mobilio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GasEngine"/>
+        <NamedIndividual IRI="#NA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Electric"/>
+        <NamedIndividual IRI="#NACS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VehiclePurpose"/>
+        <NamedIndividual IRI="#OffRoadCar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ElectricEngine"/>
+        <NamedIndividual IRI="#PMSM"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mitsubishi"/>
+        <NamedIndividual IRI="#PajeroSport"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hyundai"/>
+        <NamedIndividual IRI="#Palisade"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VehiclePurpose"/>
+        <NamedIndividual IRI="#PerformanceCar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HybridEngine"/>
+        <NamedIndividual IRI="#PowerSplit"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DieselEngine"/>
+        <NamedIndividual IRI="#PumpLineNozzle_UnitInjector"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gas"/>
+        <NamedIndividual IRI="#RON89"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gas"/>
+        <NamedIndividual IRI="#RON90"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gas"/>
+        <NamedIndividual IRI="#RON92"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gas"/>
+        <NamedIndividual IRI="#RON95"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gas"/>
+        <NamedIndividual IRI="#RON98"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#DriveTrain"/>
         <NamedIndividual IRI="#RWD"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#BodyStyle"/>
-        <NamedIndividual IRI="#SUV"/>
+        <Class IRI="#Toyota"/>
+        <NamedIndividual IRI="#Raize"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#BodyStyle"/>
+        <Class IRI="#Daihatsu"/>
+        <NamedIndividual IRI="#Rocky"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Toyota"/>
+        <NamedIndividual IRI="#Rush"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hyundai"/>
+        <NamedIndividual IRI="#SantaFE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VehicleType"/>
         <NamedIndividual IRI="#Sedan"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Model"/>
+        <Class IRI="#Daihatsu"/>
+        <NamedIndividual IRI="#Sigra"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Daihatsu"/>
+        <NamedIndividual IRI="#Sirion"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VehicleType"/>
+        <NamedIndividual IRI="#SmallSUV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hyundai"/>
         <NamedIndividual IRI="#Stargazer"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Brand"/>
-        <NamedIndividual IRI="#Suzuki"/>
+        <Class IRI="#Hyundai"/>
+        <NamedIndividual IRI="#StargazerX"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Brand"/>
-        <NamedIndividual IRI="#Toyota"/>
+        <Class IRI="#Hyundai"/>
+        <NamedIndividual IRI="#Staria"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Brand"/>
-        <NamedIndividual IRI="#Wuling"/>
+        <Class IRI="#Daihatsu"/>
+        <NamedIndividual IRI="#Terios"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Model"/>
+        <Class IRI="#GasEngine"/>
+        <NamedIndividual IRI="#TurboCharged"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DieselEngine"/>
+        <NamedIndividual IRI="#TurbochargedDiesel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Electric"/>
+        <NamedIndividual IRI="#Type1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Electric"/>
+        <NamedIndividual IRI="#Type2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VehiclePurpose"/>
+        <NamedIndividual IRI="#UtilityCar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Toyota"/>
+        <NamedIndividual IRI="#Vellfire"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Toyota"/>
+        <NamedIndividual IRI="#Veloz"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Toyota"/>
+        <NamedIndividual IRI="#Vios"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Honda"/>
+        <NamedIndividual IRI="#WRV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Suzuki"/>
+        <NamedIndividual IRI="#XL7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Daihatsu"/>
         <NamedIndividual IRI="#Xenia"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#ModelYear"/>
-        <NamedIndividual IRI="#2020"/>
+        <Class IRI="#Mitsubishi"/>
+        <NamedIndividual IRI="#Xforce"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#ModelYear"/>
-        <NamedIndividual IRI="#2021"/>
+        <Class IRI="#Mitsubishi"/>
+        <NamedIndividual IRI="#Xpander"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#ModelYear"/>
-        <NamedIndividual IRI="#2022"/>
+        <Class IRI="#Mitsubishi"/>
+        <NamedIndividual IRI="#XpanderCross"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#ModelYear"/>
-        <NamedIndividual IRI="#2023"/>
+        <Class IRI="#Toyota"/>
+        <NamedIndividual IRI="#Yaris"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#ModelYear"/>
-        <NamedIndividual IRI="#2024"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#ModelYear"/>
-        <NamedIndividual IRI="#2025"/>
+        <Class IRI="#Toyota"/>
+        <NamedIndividual IRI="#YarisCross"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#DriveTrain"/>
         <NamedIndividual IRI="#4WD"/>
     </ClassAssertion>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasBodyStyle"/>
-        <Class IRI="#Car"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasBrand"/>
-        <Class IRI="#Car"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasBrand"/>
-        <Class IRI="#Model"/>
-    </ObjectPropertyDomain>
+    <ClassAssertion>
+        <Class IRI="#Electric"/>
+        <NamedIndividual IRI="#GB/T"/>
+    </ClassAssertion>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasDriveTrain"/>
-        <Class IRI="#Car"/>
+        <Class IRI="#VehicleType"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasEngineType"/>
-        <Class IRI="#Car"/>
+        <ObjectProperty IRI="#hasEngineTypeDieselEngine"/>
+        <Class IRI="#VehicleType"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasFuelType"/>
-        <Class IRI="#Car"/>
+        <ObjectProperty IRI="#hasEngineTypeElectricEngine"/>
+        <Class IRI="#VehicleType"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasEngineTypeGasEngine"/>
+        <Class IRI="#VehicleType"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasEngineTypeHybridEngine"/>
+        <Class IRI="#VehicleType"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFuelTypeDiesel"/>
+        <Class IRI="#VehicleType"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFuelTypeElectric"/>
+        <Class IRI="#VehicleType"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFuelTypeGas"/>
+        <Class IRI="#VehicleType"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFuelTypeHybrid"/>
+        <Class IRI="#VehicleType"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasModel"/>
-        <Class IRI="#Brand"/>
+        <Class IRI="#VehicleType"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasModel"/>
-        <Class IRI="#Car"/>
+        <ObjectProperty IRI="#hasTransmissionAutomatic"/>
+        <Class IRI="#VehicleType"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasModelYear"/>
-        <Class IRI="#Car"/>
+        <ObjectProperty IRI="#hasTransmissionManual"/>
+        <Class IRI="#VehicleType"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <Class IRI="#Car"/>
+        <ObjectProperty IRI="#hasVehiclePurpose"/>
+        <Class IRI="#VehicleType"/>
     </ObjectPropertyDomain>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasBodyStyle"/>
-        <Class IRI="#BodyStyle"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasBrand"/>
-        <Class IRI="#Brand"/>
-    </ObjectPropertyRange>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasVehicleType"/>
+        <Class IRI="#VehicleType"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasDriveTrain"/>
         <Class IRI="#DriveTrain"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasEngineType"/>
-        <Class IRI="#EngineType"/>
+        <ObjectProperty IRI="#hasEngineTypeDieselEngine"/>
+        <Class IRI="#DieselEngine"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasFuelType"/>
-        <Class IRI="#FuelType"/>
+        <ObjectProperty IRI="#hasEngineTypeElectricEngine"/>
+        <Class IRI="#ElectricEngine"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasEngineTypeGasEngine"/>
+        <Class IRI="#GasEngine"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasEngineTypeHybridEngine"/>
+        <Class IRI="#HybridEngine"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFuelTypeDiesel"/>
+        <Class IRI="#Diesel"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFuelTypeElectric"/>
+        <Class IRI="#Electric"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFuelTypeGas"/>
+        <Class IRI="#Gas"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFuelTypeHybrid"/>
+        <Class IRI="#Hybrid"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasModel"/>
-        <Class IRI="#Model"/>
+        <Class IRI="#Brand"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasModelYear"/>
-        <Class IRI="#ModelYear"/>
+        <ObjectProperty IRI="#hasTransmissionAutomatic"/>
+        <Class IRI="#Automatic"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <Class IRI="#Transmission"/>
+        <ObjectProperty IRI="#hasTransmissionManual"/>
+        <Class IRI="#Manual"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasVehiclePurpose"/>
+        <Class IRI="#VehiclePurpose"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasVehicleType"/>
+        <Class IRI="#VehicleType"/>
     </ObjectPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#PriceRange?</IRI>
-        <Literal>Ragu</Literal>
+        <IRI>#AC</IRI>
+        <Literal>(Alternating Current) atau arus bolak balik, mengisi daya dengan menggunakan listrik</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BLDC</IRI>
+        <Literal>(brushless DC)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CRDI</IRI>
+        <Literal>(Common-rail) injeksi bertekanan tinggi terpusat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DI</IRI>
+        <Literal>(Injeksi Langsung) injektor langsung ke ruang bakar</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Engine</IRI>
+        <Literal>Mengisi daya melalui hasil kinerja dari mesin mobil</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Flex-fuel</IRI>
+        <Literal>bisa pakai bahan bakar alternatif</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Full-hybrid</IRI>
+        <Literal>bisa jalan hanya dengan listrik untuk jarak pendek</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#GDI</IRI>
+        <Literal>(Direct Injection) injeksi bensin langsung ke ruang bakar</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HubMotor</IRI>
+        <Literal>motor terintegrasi di roda</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Hybrid</IRI>
+        <Literal>Hybrid = gabungan tipe bensin listrik dan gas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#IDI</IRI>
+        <Literal>(Injeksi tidak langsung) injektor ke ruang pra-bakar</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MPI</IRI>
+        <Literal>(Port-injection) injektor di intake manifold</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Micro-hybrid</IRI>
+        <Literal>start-stop &amp; bantuan kecil</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Mild-hybrid</IRI>
+        <Literal>motor bantu, tidak bisa jalan full listrik</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NA</IRI>
+        <Literal>(Naturally aspirated) tanpa turbo/supercharger</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PowerSplit</IRI>
+        <Literal>arsitektur penggabungan mesin &amp; motor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PumpLineNozzle_UnitInjector</IRI>
+        <Literal>PumpLineNozzle = Unit Injector. Tiap silinder punya unit tekanan sendiri</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TurboCharged</IRI>
+        <Literal>tekanan paksa untuk lebih tenaga</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TurbochargedDiesel</IRI>
+        <Literal>diesel + turbo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasPrice</IRI>
+        <Literal>Harga menggunakan rupiah (IDR)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasRegion</IRI>
+        <Literal>Asal manufaktur pembuatan</Literal>
     </AnnotationAssertion>
 </Ontology>
 
