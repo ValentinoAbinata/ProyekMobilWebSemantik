@@ -67,12 +67,6 @@
         <Class IRI="#Mitsubishi"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#PlugInHybrid"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PlugInHybridEngine"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Specs"/>
     </Declaration>
     <Declaration>
@@ -94,19 +88,40 @@
         <Class IRI="#Wuling"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasBrand"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#hasDriveTrain"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasEngineType"/>
+        <ObjectProperty IRI="#hasEngineTypeDieselEngine"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasFuelType"/>
+        <ObjectProperty IRI="#hasEngineTypeElectricEngine"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasTransmission"/>
+        <ObjectProperty IRI="#hasEngineTypeGasEngine"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEngineTypeHybridEngine"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFuelTypeDiesel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFuelTypeElectric"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFuelTypeGas"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFuelTypeHybrid"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasModel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTransmissionAutomatic"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTransmissionManual"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasVehiclePurpose"/>
@@ -121,21 +136,18 @@
         <DataProperty IRI="#FuelConsumption"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#Model"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#ModelYear"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#Price"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#Region"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#SeatCapacity"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#AC"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#AMT"/>
     </Declaration>
     <Declaration>
@@ -185,6 +197,12 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#BrioRS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CCS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CHAdeMO"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#CN48"/>
@@ -245,6 +263,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ElectricInduction"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Engine"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Ertiga"/>
@@ -352,6 +373,9 @@
         <NamedIndividual IRI="#NA"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#NACS"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#OffRoadCar"/>
     </Declaration>
     <Declaration>
@@ -364,16 +388,13 @@
         <NamedIndividual IRI="#Palisade"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#ParallelPHEV"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#PerformanceCar"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#PowerSplit"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#PumpLineNozzle"/>
+        <NamedIndividual IRI="#PumpLineNozzle_UnitInjector"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#RON89"/>
@@ -409,12 +430,6 @@
         <NamedIndividual IRI="#Sedan"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Series-ParallelPHEV"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#SeriesPHEV"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#Sigra"/>
     </Declaration>
     <Declaration>
@@ -442,7 +457,10 @@
         <NamedIndividual IRI="#TurbochargedDiesel"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#UnitInjector"/>
+        <NamedIndividual IRI="#Type1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Type2"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#UtilityCar"/>
@@ -482,6 +500,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#4WD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GB/T"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#Automatic"/>
@@ -529,7 +550,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Hybrid"/>
-        <Class IRI="#FuelType"/>
+        <Class IRI="#Electric"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hybrid"/>
+        <Class IRI="#Gas"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#HybridEngine"/>
@@ -548,14 +573,6 @@
         <Class IRI="#Brand"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#PlugInHybrid"/>
-        <Class IRI="#FuelType"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#PlugInHybridEngine"/>
-        <Class IRI="#EngineType"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Suzuki"/>
         <Class IRI="#Brand"/>
     </SubClassOf>
@@ -571,22 +588,10 @@
         <Class IRI="#Wuling"/>
         <Class IRI="#Brand"/>
     </SubClassOf>
-    <DisjointClasses>
-        <Class IRI="#Automatic"/>
-        <Class IRI="#Manual"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Diesel"/>
-        <Class IRI="#Electric"/>
-        <Class IRI="#Gas"/>
+    <ClassAssertion>
         <Class IRI="#Hybrid"/>
-        <Class IRI="#PlugInHybrid"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#DieselEngine"/>
-        <Class IRI="#ElectricEngine"/>
-        <Class IRI="#GasEngine"/>
-    </DisjointClasses>
+        <NamedIndividual IRI="#AC"/>
+    </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Automatic"/>
         <NamedIndividual IRI="#AMT"/>
@@ -654,6 +659,14 @@
     <ClassAssertion>
         <Class IRI="#Honda"/>
         <NamedIndividual IRI="#BrioRS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Electric"/>
+        <NamedIndividual IRI="#CCS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Electric"/>
+        <NamedIndividual IRI="#CHAdeMO"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Diesel"/>
@@ -734,6 +747,10 @@
     <ClassAssertion>
         <Class IRI="#ElectricEngine"/>
         <NamedIndividual IRI="#ElectricInduction"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hybrid"/>
+        <NamedIndividual IRI="#Engine"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Suzuki"/>
@@ -876,6 +893,10 @@
         <NamedIndividual IRI="#NA"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Electric"/>
+        <NamedIndividual IRI="#NACS"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#VehiclePurpose"/>
         <NamedIndividual IRI="#OffRoadCar"/>
     </ClassAssertion>
@@ -892,10 +913,6 @@
         <NamedIndividual IRI="#Palisade"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#PlugInHybridEngine"/>
-        <NamedIndividual IRI="#ParallelPHEV"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#VehiclePurpose"/>
         <NamedIndividual IRI="#PerformanceCar"/>
     </ClassAssertion>
@@ -905,7 +922,7 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#DieselEngine"/>
-        <NamedIndividual IRI="#PumpLineNozzle"/>
+        <NamedIndividual IRI="#PumpLineNozzle_UnitInjector"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Gas"/>
@@ -952,14 +969,6 @@
         <NamedIndividual IRI="#Sedan"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#PlugInHybridEngine"/>
-        <NamedIndividual IRI="#Series-ParallelPHEV"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#PlugInHybridEngine"/>
-        <NamedIndividual IRI="#SeriesPHEV"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Daihatsu"/>
         <NamedIndividual IRI="#Sigra"/>
     </ClassAssertion>
@@ -996,8 +1005,12 @@
         <NamedIndividual IRI="#TurbochargedDiesel"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#DieselEngine"/>
-        <NamedIndividual IRI="#UnitInjector"/>
+        <Class IRI="#Electric"/>
+        <NamedIndividual IRI="#Type1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Electric"/>
+        <NamedIndividual IRI="#Type2"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#VehiclePurpose"/>
@@ -1051,668 +1064,56 @@
         <Class IRI="#DriveTrain"/>
         <NamedIndividual IRI="#4WD"/>
     </ClassAssertion>
-    <SameIndividual>
-        <NamedIndividual IRI="#PumpLineNozzle"/>
-        <NamedIndividual IRI="#UnitInjector"/>
-    </SameIndividual>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#Agya"/>
-        <NamedIndividual IRI="#CVT"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#Agya"/>
-        <NamedIndividual IRI="#Manual5Speed"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasVehicleType"/>
-        <NamedIndividual IRI="#Agya"/>
-        <NamedIndividual IRI="#LCGC"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#AgyaGRS"/>
-        <NamedIndividual IRI="#CVT"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasVehicleType"/>
-        <NamedIndividual IRI="#AgyaGRS"/>
-        <NamedIndividual IRI="#CityCar"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#Almaz"/>
-        <NamedIndividual IRI="#CVT"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasVehicleType"/>
-        <NamedIndividual IRI="#Almaz"/>
-        <NamedIndividual IRI="#MediumSUV"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#Alphard"/>
-        <NamedIndividual IRI="#CVT"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasVehicleType"/>
-        <NamedIndividual IRI="#Alphard"/>
-        <NamedIndividual IRI="#LargeMPV"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#Alvez"/>
-        <NamedIndividual IRI="#CVT"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#Alvez"/>
-        <NamedIndividual IRI="#Manual6Speed"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasVehicleType"/>
-        <NamedIndividual IRI="#Alvez"/>
-        <NamedIndividual IRI="#CompactSUV"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#Avanza"/>
-        <NamedIndividual IRI="#CVT"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#Avanza"/>
-        <NamedIndividual IRI="#Manual5Speed"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasVehicleType"/>
-        <NamedIndividual IRI="#Avanza"/>
-        <NamedIndividual IRI="#LowMPV"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#Ayla"/>
-        <NamedIndividual IRI="#CVT"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#Ayla"/>
-        <NamedIndividual IRI="#Manual5Speed"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasVehicleType"/>
-        <NamedIndividual IRI="#Ayla"/>
-        <NamedIndividual IRI="#LCGC"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#BRV"/>
-        <NamedIndividual IRI="#CVT"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#BRV"/>
-        <NamedIndividual IRI="#Manual6Speed"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasVehicleType"/>
-        <NamedIndividual IRI="#BRV"/>
-        <NamedIndividual IRI="#LowSUV"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#Baleno"/>
-        <NamedIndividual IRI="#AT4Speed"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasVehicleType"/>
-        <NamedIndividual IRI="#Baleno"/>
-        <NamedIndividual IRI="#Hatchback"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#Brio"/>
-        <NamedIndividual IRI="#CVT"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#Brio"/>
-        <NamedIndividual IRI="#Manual5Speed"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasVehicleType"/>
-        <NamedIndividual IRI="#Brio"/>
-        <NamedIndividual IRI="#LCGC"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#BrioRS"/>
-        <NamedIndividual IRI="#CVT"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#BrioRS"/>
-        <NamedIndividual IRI="#Manual5Speed"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasVehicleType"/>
-        <NamedIndividual IRI="#BrioRS"/>
-        <NamedIndividual IRI="#CityCar"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#CRV"/>
-        <NamedIndividual IRI="#CVT"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasVehicleType"/>
-        <NamedIndividual IRI="#CRV"/>
-        <NamedIndividual IRI="#CompactSUV"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#Calya"/>
-        <NamedIndividual IRI="#Manual5Speed"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasVehicleType"/>
-        <NamedIndividual IRI="#Calya"/>
-        <NamedIndividual IRI="#LCGC"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#Camry"/>
-        <NamedIndividual IRI="#CVT"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasVehicleType"/>
-        <NamedIndividual IRI="#Camry"/>
-        <NamedIndividual IRI="#Sedan"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#City"/>
-        <NamedIndividual IRI="#CVT"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasVehicleType"/>
-        <NamedIndividual IRI="#City"/>
-        <NamedIndividual IRI="#Sedan"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#Civic"/>
-        <NamedIndividual IRI="#CVT"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasVehicleType"/>
-        <NamedIndividual IRI="#Civic"/>
-        <NamedIndividual IRI="#Sedan"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#Confero"/>
-        <NamedIndividual IRI="#Manual5Speed"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasVehicleType"/>
-        <NamedIndividual IRI="#Confero"/>
-        <NamedIndividual IRI="#LowMPV"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#CorollaAltis"/>
-        <NamedIndividual IRI="#CVT"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasVehicleType"/>
-        <NamedIndividual IRI="#CorollaAltis"/>
-        <NamedIndividual IRI="#Sedan"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#Cortez"/>
-        <NamedIndividual IRI="#Manual5Speed"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasVehicleType"/>
-        <NamedIndividual IRI="#Cortez"/>
-        <NamedIndividual IRI="#LowMPV"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#Creta"/>
-        <NamedIndividual IRI="#CVT"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasVehicleType"/>
-        <NamedIndividual IRI="#Creta"/>
-        <NamedIndividual IRI="#CompactSUV"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#Destinator"/>
-        <NamedIndividual IRI="#Manual5Speed"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#Ertiga"/>
-        <NamedIndividual IRI="#AT4Speed"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasVehicleType"/>
-        <NamedIndividual IRI="#Ertiga"/>
-        <NamedIndividual IRI="#LowMPV"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#Espresso"/>
-        <NamedIndividual IRI="#Manual5Speed"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasVehicleType"/>
-        <NamedIndividual IRI="#Espresso"/>
-        <NamedIndividual IRI="#LCGC"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#Fortuner"/>
-        <NamedIndividual IRI="#AT6Speed"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasVehicleType"/>
-        <NamedIndividual IRI="#Fortuner"/>
-        <NamedIndividual IRI="#LargeSUV"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#Fronx"/>
-        <NamedIndividual IRI="#AMT"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasVehicleType"/>
-        <NamedIndividual IRI="#Fronx"/>
-        <NamedIndividual IRI="#CompactSUV"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#GrandVitara"/>
-        <NamedIndividual IRI="#AT6Speed"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasVehicleType"/>
-        <NamedIndividual IRI="#GrandVitara"/>
-        <NamedIndividual IRI="#CompactSUV"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#HRV"/>
-        <NamedIndividual IRI="#CVT"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasVehicleType"/>
-        <NamedIndividual IRI="#HRV"/>
-        <NamedIndividual IRI="#CompactSUV"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#InnovaReborn"/>
-        <NamedIndividual IRI="#AT6Speed"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasVehicleType"/>
-        <NamedIndividual IRI="#InnovaReborn"/>
-        <NamedIndividual IRI="#LargeMPV"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#InnovaZenix"/>
-        <NamedIndividual IRI="#CVT"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasVehicleType"/>
-        <NamedIndividual IRI="#InnovaZenix"/>
-        <NamedIndividual IRI="#LargeMPV"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#Ioniq5"/>
-        <NamedIndividual IRI="#DCT"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasVehicleType"/>
-        <NamedIndividual IRI="#Ioniq5"/>
-        <NamedIndividual IRI="#CompactSUV"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#Jazz"/>
-        <NamedIndividual IRI="#CVT"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasVehicleType"/>
-        <NamedIndividual IRI="#Jazz"/>
-        <NamedIndividual IRI="#Hatchback"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#Jimny"/>
-        <NamedIndividual IRI="#AT4Speed"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasVehicleType"/>
-        <NamedIndividual IRI="#Jimny"/>
-        <NamedIndividual IRI="#SmallSUV"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#Karimun"/>
-        <NamedIndividual IRI="#Manual5Speed"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasVehicleType"/>
-        <NamedIndividual IRI="#Karimun"/>
-        <NamedIndividual IRI="#LCGC"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#KonaElectric"/>
-        <NamedIndividual IRI="#DCT"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasVehicleType"/>
-        <NamedIndividual IRI="#KonaElectric"/>
-        <NamedIndividual IRI="#CompactSUV"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#Mobilio"/>
-        <NamedIndividual IRI="#CVT"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasVehicleType"/>
-        <NamedIndividual IRI="#Mobilio"/>
-        <NamedIndividual IRI="#LowMPV"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#PajeroSport"/>
-        <NamedIndividual IRI="#AT8Speed"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasVehicleType"/>
-        <NamedIndividual IRI="#PajeroSport"/>
-        <NamedIndividual IRI="#LargeSUV"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#Palisade"/>
-        <NamedIndividual IRI="#AT8Speed"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasVehicleType"/>
-        <NamedIndividual IRI="#Palisade"/>
-        <NamedIndividual IRI="#LargeSUV"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#Raize"/>
-        <NamedIndividual IRI="#CVT"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasVehicleType"/>
-        <NamedIndividual IRI="#Raize"/>
-        <NamedIndividual IRI="#SmallSUV"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#Rocky"/>
-        <NamedIndividual IRI="#CVT"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasVehicleType"/>
-        <NamedIndividual IRI="#Rocky"/>
-        <NamedIndividual IRI="#SmallSUV"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#Rush"/>
-        <NamedIndividual IRI="#AT4Speed"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasVehicleType"/>
-        <NamedIndividual IRI="#Rush"/>
-        <NamedIndividual IRI="#SmallSUV"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#SantaFE"/>
-        <NamedIndividual IRI="#AT8Speed"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasVehicleType"/>
-        <NamedIndividual IRI="#SantaFE"/>
-        <NamedIndividual IRI="#LargeSUV"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#Sigra"/>
-        <NamedIndividual IRI="#CVT"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasVehicleType"/>
-        <NamedIndividual IRI="#Sigra"/>
-        <NamedIndividual IRI="#LCGC"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#Sirion"/>
-        <NamedIndividual IRI="#CVT"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasVehicleType"/>
-        <NamedIndividual IRI="#Sirion"/>
-        <NamedIndividual IRI="#CityCar"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#Stargazer"/>
-        <NamedIndividual IRI="#CVT"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasVehicleType"/>
-        <NamedIndividual IRI="#Stargazer"/>
-        <NamedIndividual IRI="#LowMPV"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#StargazerX"/>
-        <NamedIndividual IRI="#CVT"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasVehicleType"/>
-        <NamedIndividual IRI="#StargazerX"/>
-        <NamedIndividual IRI="#CompactSUV"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#Staria"/>
-        <NamedIndividual IRI="#AT8Speed"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasVehicleType"/>
-        <NamedIndividual IRI="#Staria"/>
-        <NamedIndividual IRI="#LargeMPV"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#Terios"/>
-        <NamedIndividual IRI="#AT4Speed"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasVehicleType"/>
-        <NamedIndividual IRI="#Terios"/>
-        <NamedIndividual IRI="#SmallSUV"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#Vellfire"/>
-        <NamedIndividual IRI="#CVT"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasVehicleType"/>
-        <NamedIndividual IRI="#Vellfire"/>
-        <NamedIndividual IRI="#LargeMPV"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#Veloz"/>
-        <NamedIndividual IRI="#CVT"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasVehicleType"/>
-        <NamedIndividual IRI="#Veloz"/>
-        <NamedIndividual IRI="#LowMPV"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#Vios"/>
-        <NamedIndividual IRI="#CVT"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasVehicleType"/>
-        <NamedIndividual IRI="#Vios"/>
-        <NamedIndividual IRI="#Sedan"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#WRV"/>
-        <NamedIndividual IRI="#CVT"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasVehicleType"/>
-        <NamedIndividual IRI="#WRV"/>
-        <NamedIndividual IRI="#CompactSUV"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#XL7"/>
-        <NamedIndividual IRI="#AT4Speed"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasVehicleType"/>
-        <NamedIndividual IRI="#XL7"/>
-        <NamedIndividual IRI="#LowMPV"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#Xenia"/>
-        <NamedIndividual IRI="#CVT"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasVehicleType"/>
-        <NamedIndividual IRI="#Xenia"/>
-        <NamedIndividual IRI="#LowMPV"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#Xforce"/>
-        <NamedIndividual IRI="#CVT"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasVehicleType"/>
-        <NamedIndividual IRI="#Xforce"/>
-        <NamedIndividual IRI="#CompactSUV"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#Xpander"/>
-        <NamedIndividual IRI="#CVT"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasVehicleType"/>
-        <NamedIndividual IRI="#Xpander"/>
-        <NamedIndividual IRI="#LowMPV"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#XpanderCross"/>
-        <NamedIndividual IRI="#CVT"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasVehicleType"/>
-        <NamedIndividual IRI="#XpanderCross"/>
-        <NamedIndividual IRI="#CompactSUV"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#Yaris"/>
-        <NamedIndividual IRI="#CVT"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasVehicleType"/>
-        <NamedIndividual IRI="#Yaris"/>
-        <NamedIndividual IRI="#Hatchback"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <NamedIndividual IRI="#YarisCross"/>
-        <NamedIndividual IRI="#CVT"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasVehicleType"/>
-        <NamedIndividual IRI="#YarisCross"/>
-        <NamedIndividual IRI="#CompactSUV"/>
-    </ObjectPropertyAssertion>
-    <FunctionalObjectProperty>
-        <ObjectProperty IRI="#hasBrand"/>
-    </FunctionalObjectProperty>
-    <FunctionalObjectProperty>
-        <ObjectProperty IRI="#hasEngineType"/>
-    </FunctionalObjectProperty>
-    <FunctionalObjectProperty>
-        <ObjectProperty IRI="#hasFuelType"/>
-    </FunctionalObjectProperty>
-    <FunctionalObjectProperty>
-        <ObjectProperty IRI="#hasTransmission"/>
-    </FunctionalObjectProperty>
-    <FunctionalObjectProperty>
-        <ObjectProperty IRI="#hasVehicleType"/>
-    </FunctionalObjectProperty>
-    <IrreflexiveObjectProperty>
-        <ObjectProperty IRI="#hasBrand"/>
-    </IrreflexiveObjectProperty>
-    <IrreflexiveObjectProperty>
-        <ObjectProperty IRI="#hasEngineType"/>
-    </IrreflexiveObjectProperty>
-    <IrreflexiveObjectProperty>
-        <ObjectProperty IRI="#hasFuelType"/>
-    </IrreflexiveObjectProperty>
-    <IrreflexiveObjectProperty>
-        <ObjectProperty IRI="#hasTransmission"/>
-    </IrreflexiveObjectProperty>
-    <IrreflexiveObjectProperty>
-        <ObjectProperty IRI="#hasVehicleType"/>
-    </IrreflexiveObjectProperty>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasBrand"/>
-        <Class IRI="#VehicleType"/>
-    </ObjectPropertyDomain>
+    <ClassAssertion>
+        <Class IRI="#Electric"/>
+        <NamedIndividual IRI="#GB/T"/>
+    </ClassAssertion>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasDriveTrain"/>
         <Class IRI="#VehicleType"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasEngineType"/>
+        <ObjectProperty IRI="#hasEngineTypeDieselEngine"/>
         <Class IRI="#VehicleType"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasFuelType"/>
+        <ObjectProperty IRI="#hasEngineTypeElectricEngine"/>
         <Class IRI="#VehicleType"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasTransmission"/>
+        <ObjectProperty IRI="#hasEngineTypeGasEngine"/>
+        <Class IRI="#VehicleType"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasEngineTypeHybridEngine"/>
+        <Class IRI="#VehicleType"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFuelTypeDiesel"/>
+        <Class IRI="#VehicleType"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFuelTypeElectric"/>
+        <Class IRI="#VehicleType"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFuelTypeGas"/>
+        <Class IRI="#VehicleType"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFuelTypeHybrid"/>
+        <Class IRI="#VehicleType"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasModel"/>
+        <Class IRI="#VehicleType"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTransmissionAutomatic"/>
+        <Class IRI="#VehicleType"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTransmissionManual"/>
         <Class IRI="#VehicleType"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -1724,24 +1125,52 @@
         <Class IRI="#VehicleType"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasBrand"/>
-        <Class IRI="#Brand"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="#hasDriveTrain"/>
         <Class IRI="#DriveTrain"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasEngineType"/>
-        <Class IRI="#EngineType"/>
+        <ObjectProperty IRI="#hasEngineTypeDieselEngine"/>
+        <Class IRI="#DieselEngine"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasFuelType"/>
-        <Class IRI="#FuelType"/>
+        <ObjectProperty IRI="#hasEngineTypeElectricEngine"/>
+        <Class IRI="#ElectricEngine"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasTransmission"/>
-        <Class IRI="#Transmission"/>
+        <ObjectProperty IRI="#hasEngineTypeGasEngine"/>
+        <Class IRI="#GasEngine"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasEngineTypeHybridEngine"/>
+        <Class IRI="#HybridEngine"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFuelTypeDiesel"/>
+        <Class IRI="#Diesel"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFuelTypeElectric"/>
+        <Class IRI="#Electric"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFuelTypeGas"/>
+        <Class IRI="#Gas"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFuelTypeHybrid"/>
+        <Class IRI="#Hybrid"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasModel"/>
+        <Class IRI="#Brand"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTransmissionAutomatic"/>
+        <Class IRI="#Automatic"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTransmissionManual"/>
+        <Class IRI="#Manual"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasVehiclePurpose"/>
@@ -1751,6 +1180,11 @@
         <ObjectProperty IRI="#hasVehicleType"/>
         <Class IRI="#VehicleType"/>
     </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AC</IRI>
+        <Literal>(Alternating Current) atau arus bolak balik, mengisi daya dengan menggunakan listrik</Literal>
+    </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#BLDC</IRI>
@@ -1765,6 +1199,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#DI</IRI>
         <Literal>(Injeksi Langsung) injektor langsung ke ruang bakar</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Engine</IRI>
+        <Literal>Mengisi daya melalui hasil kinerja dari mesin mobil</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1785,6 +1224,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#HubMotor</IRI>
         <Literal>motor terintegrasi di roda</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Hybrid</IRI>
+        <Literal>Hybrid = gabungan tipe bensin listrik dan gas</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1813,28 +1257,13 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#ParallelPHEV</IRI>
-        <Literal>mesin + motor bisa bantu langsung ke roda</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#PowerSplit</IRI>
         <Literal>arsitektur penggabungan mesin &amp; motor</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#PumpLineNozzle</IRI>
-        <Literal>tiap silinder punya unit tekanan sendiri</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Series-ParallelPHEV</IRI>
-        <Literal>kombinasi fleksibel</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#SeriesPHEV</IRI>
-        <Literal>mesin jadi generator, motor penggerak utama</Literal>
+        <IRI>#PumpLineNozzle_UnitInjector</IRI>
+        <Literal>PumpLineNozzle = Unit Injector. Tiap silinder punya unit tekanan sendiri</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1845,11 +1274,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#TurbochargedDiesel</IRI>
         <Literal>diesel + turbo</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#UnitInjector</IRI>
-        <Literal>tiap silinder punya unit tekanan sendiri</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
